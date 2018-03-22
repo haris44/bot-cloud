@@ -1,0 +1,23 @@
+{
+    "name": "project",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+        "watch": "webpack --progress --colors --watch --config webpack.config.js",
+        "build": "webpack --progress --colors --config webpack.config.js",
+        "start": "node dist/index.js",
+        "test": "nyc ava"
+    },
+    "dependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.25.0",
+        "babel-loader": "^7.1.1",
+        "babel-preset-env": "^1.6.0",
+        "hapi": "^17.2.0",
+        "joi": "^13.1.0",
+        "moment": "^2.20.1",
+        "webpack": "^3.10.0"
+
+    }
+}

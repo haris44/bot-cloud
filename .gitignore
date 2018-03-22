@@ -1,0 +1,11 @@
+www/*
+node_modules
+plugins
+platforms
+.vscode
+merges
+res
+!www/notilus.db
+.DS_Store
+dist
+.env
