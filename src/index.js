@@ -16,7 +16,7 @@ server.route({
         cors: true,
         handler: (request) => {
             const $message = request.payload
-            const result = "J'aime le cloud"
+            const result = "Je suis un cloud parce qu'on peut m'instancier depuis une interface web, je suis hébergé chez Scaleway et dispose d'une très bonne connectivité. Mes ressources sont hébergées à Paris sur les datacenters de Scaleway. On peut me mettre en ligne en une minute, et gratuitement !"
             const newMessage = Object.assign($message.message, { content: result })
             const newIntentMessage = Object.assign($message, { message: newMessage })
             return newIntentMessage
